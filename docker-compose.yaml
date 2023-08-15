@@ -3,7 +3,7 @@ version: '3'
 services:
 
   postgres:
-    container_name: postgres_container
+    container_name: authuser_postgres_container
     image: postgres
     restart: always
     environment:
@@ -18,7 +18,7 @@ services:
       - authuser-network
 
   pgadmin:
-    container_name: pgadmin_container
+    container_name: authuser_pgadmin_container
     image: dpage/pgadmin4
     restart: always
     environment:
